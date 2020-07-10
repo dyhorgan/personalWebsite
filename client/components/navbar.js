@@ -7,22 +7,11 @@ import {logout} from '../store'
 const Navbar = ({handleClick, isLoggedIn}) => (
   <div>
     <h1>Dylan Horgan</h1>
-    <nav>
-      {isLoggedIn ? (
-        <div>
-          {/* The navbar will show these links after you log in */}
-          <Link to="/home">Home</Link>
-          <a href="#" onClick={handleClick}>
-            Logout
-          </a>
-        </div>
-      ) : (
-        <div>
-          {/* The navbar will show these links before you log in */}
-          <Link to="/login">Login</Link>
-          <Link to="/signup">Sign Up</Link>
-        </div>
-      )}
+    <nav className="row space-around">
+      <Link to="/">About</Link>
+      <Link to="/experience">Experience</Link>
+      <Link to="/portfolio">Porfolio</Link>
+      <Link to="/contact">Contact</Link>
     </nav>
     <hr />
   </div>
@@ -54,3 +43,19 @@ Navbar.propTypes = {
   handleClick: PropTypes.func.isRequired,
   isLoggedIn: PropTypes.bool.isRequired
 }
+
+//   isLoggedIn ? (
+//   <div>
+//     {/* The navbar will show these links after you log in */}
+//     <Link to="/home">Home</Link>
+//     <a href="#" onClick={handleClick}>
+//       Logout
+//     </a>
+//   </div>
+// ) : (
+//   <div>
+//     {/* The navbar will show these links before you log in */}
+//     <Link to="/login">Login</Link>
+//     <Link to="/signup">Sign Up</Link>
+//   </div>
+// )

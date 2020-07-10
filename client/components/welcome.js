@@ -1,5 +1,5 @@
 import React from 'react'
 
 export const Welcome = () => {
-  return <h1>Hello! Welcome to Dylan Horgan's Website</h1>
+  return <h1 className="center">Freelance Web Developer Based in New York.</h1>
 }
