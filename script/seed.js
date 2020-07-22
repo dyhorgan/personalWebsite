@@ -1,21 +1,69 @@
 'use strict'
 
 const db = require('../server/db')
-const {User} = require('../server/db/models')
+const {User, Project} = require('../server/db/models')
+
+let projects = [
+  {
+    title: 'StreamGuide',
+    gitUrl: 'https://github.com/dyhorgan/StreamGuide',
+    imageUrl: 'https://i.imgur.com/zbJtChx.png',
+    description:
+      'Tool for filtering through the libraries of streaming services.',
+    techStack: [
+      'React',
+      'Express',
+      'Sequelize',
+      'Node.js',
+      'PostgreSQL',
+      'Materialize.CSS'
+    ]
+  },
+  {
+    title: 'TERRA 2042',
+    gitUrl: 'https://github.com/MADE-Game/TERRA2042',
+    imageUrl:
+      'https://raw.githubusercontent.com/MADE-Game/TERRA2042/master/public/images/logo.png',
+    description: 'Online card game',
+    techStack: [
+      'React',
+      'Express',
+      'MongoDb',
+      'Node.js',
+      'Socket.io',
+      'Google OAuth',
+      'React-DnD'
+    ]
+  },
+  {
+    title: 'GreenShopper',
+    gitUrl: 'https://github.com/Green-Shopper/GreenShopper',
+    imageUrl: 'https://i.imgur.com/MO1jzAn.png',
+    description: 'E-commerce site for selling potted plants.',
+    techStack: [
+      'React',
+      'React-Redux',
+      'Express',
+      'Sequelize',
+      'Node.js',
+      'Postgres',
+      'Google OAuth',
+      'Materialize CSS'
+    ]
+  }
+]
 
 async function seed() {
   await db.sync({force: true})
-  console.log('db synced!')
 
-  const users = await Promise.all([
-    User.create({email: 'cody@email.com', password: '123'}),
-    User.create({email: 'murphy@email.com', password: '123'})
-  ])
+  for (let i = 0; i < projects.length; i++) {
+    let project = projects[i]
+    await Project.create(project)
+  }
 
-  console.log(`seeded ${users.length} users`)
   console.log(`seeded successfully`)
+  // db.close()
 }
-
 // We've separated the `seed` function from the `runSeed` function.
 // This way we can isolate the error handling and exit trapping.
 // The `seed` function is concerned only with modifying the database.

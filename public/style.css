@@ -34,3 +34,13 @@ form div {
   display: flex;
   justify-content: center;
 }
+
+.picStyle {
+  max-width: 40%;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
