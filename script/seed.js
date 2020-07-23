@@ -1,7 +1,7 @@
 'use strict'
 
 const db = require('../server/db')
-const {User, Project} = require('../server/db/models')
+const {User, Project, Job} = require('../server/db/models')
 
 let projects = [
   {
@@ -53,12 +53,47 @@ let projects = [
   }
 ]
 
+let jobs = [
+  {
+    company: 'PuppySpot',
+    title: 'Sales Specialist',
+    description: [
+      'Functioned as sales rep for ~$800M start-up that helps place puppies with caring families across the United States',
+      'Achieved sales of $40,000 worth of pets per month, handling all aspects of the sales process from negotiating with breeders, marketing to customers, and processing sales transactions',
+      'Managed relationships with 300+ customers monthly and interacted with a national network of pre-vetted ethical breeders'
+    ],
+    dates: 'January 2019 – April 2019'
+  },
+  {
+    company: 'RYU',
+    title: 'Sales Connector',
+    description: [
+      'Worked with a team of 10 employees to launch Brooklyn extension of high-end North American retailer, Respect Your  Universe',
+      'Managed store inventory and deliveries, assisted customers throughout sales process, and operated various POS systems'
+    ],
+    dates: 'November 2018 – April 2019'
+  },
+  {
+    company: 'Foundry Literary + Media',
+    title: 'Intern',
+    description: [
+      'Evaluated manuscript pipeline to identify opportunities for signing new authors and commissioning publications',
+      'Created detailed reports for agents, laying out manuscript strengths and assessing potential value of signing manuscript author'
+    ],
+    dates: 'September 2017 – December 2017'
+  }
+]
+
 async function seed() {
   await db.sync({force: true})
 
   for (let i = 0; i < projects.length; i++) {
     let project = projects[i]
     await Project.create(project)
+  }
+  for (let i = 0; i < jobs.length; i++) {
+    let job = jobs[i]
+    await Job.create(job)
   }
 
   console.log(`seeded successfully`)

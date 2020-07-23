@@ -22,8 +22,10 @@ export class Portfolio extends React.Component {
         {projects.map(function(project) {
           return (
             <div key={project.id}>
-              <Link to={project.gitUrl}>{project.title}</Link>
-              <img src={project.imageUrl} className="picStyle" />
+              <div className="column">
+                <a href={project.gitUrl}>{project.title}</a>
+                <img src={project.imageUrl} className="picStyle" />
+              </div>
               <p>{project.description}</p>
               <div className="row">
                 {project.techStack.map(function(tech) {
