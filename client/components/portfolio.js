@@ -15,27 +15,37 @@ export class Portfolio extends React.Component {
   }
   render() {
     let {projects} = this.state
-
+    let customId = 0
     return (
-      <div>
-        Portfolio
-        {projects.map(function(project) {
-          return (
-            <div key={project.id}>
-              <div className="column">
-                <a href={project.gitUrl}>{project.title}</a>
-                <img src={project.imageUrl} className="picStyle" />
+      <div className="indentStyle portfolioMargin">
+        <h1 className="whiteColor">Portfolio</h1>
+        <div className="topMargin">
+          {projects.map(function(project) {
+            return (
+              <div key={project.id} className="pad">
+                <div className="row">
+                  <a href={project.gitUrl} className="large white bold outline">
+                    {project.title}
+                  </a>
+                  <a href={project.gitUrl}>
+                    <img src={project.imageUrl} className="picStyle" />
+                  </a>
+                </div>
+                <p className="medium white">{project.description}</p>
+                <div className="row">
+                  {project.techStack.map(function(tech) {
+                    customId += 1
+                    return (
+                      <div key={customId}>
+                        <p className="white">{tech}</p>
+                      </div>
+                    )
+                  })}
+                </div>
               </div>
-              <p>{project.description}</p>
-              <div className="row">
-                {project.techStack.map(function(tech) {
-                  return <p>{tech}</p>
-                })}
-              </div>
-              <p />
-            </div>
-          )
-        })}
+            )
+          })}
+        </div>
       </div>
     )
   }

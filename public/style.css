@@ -1,5 +1,6 @@
 body {
   font-family: sans-serif;
+  background-color: rgb(56, 50, 50);
 }
 
 a {
@@ -36,7 +37,7 @@ form div {
 }
 
 .picStyle {
-  max-width: 40%;
+  max-width: 500px;
 }
 
 .row {
@@ -48,4 +49,76 @@ form div {
 .column {
   display: flex;
   flex-direction: column;
+}
+
+.navColor {
+  background-color: rgb(56, 50, 50);
+}
+
+.navTextColor {
+  color: white;
+}
+
+@font-face {
+  font-family: 'helsinki';
+  src: url('./font/helsinki.ttf');
+}
+
+.headerStyle {
+  font-family: 'helsinki';
+  color: white;
+  position: relative;
+  left: 80px;
+  font-size: 80px;
+}
+
+.indentStyle {
+  position: relative;
+  left: 100px;
+}
+
+.whiteBackground {
+  background-color: white;
+}
+
+.whiteColor {
+  font-family: 'helsinki';
+  color: white;
+}
+
+.portfolioMargin {
+  margin-right: 200px;
+}
+
+.margins {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.white {
+  color: white;
+}
+
+.outline {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+.medium {
+  font-size: 25px;
+}
+
+.pad {
+  margin-bottom: 15em;
+}
+.topMargin {
+  margin-top: 7em;
+}
+
+.bold {
+  font-weight: bolder;
+}
+
+.large {
+  font-size: 35px;
 }

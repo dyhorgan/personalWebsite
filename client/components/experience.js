@@ -12,18 +12,19 @@ export class Experience extends React.Component {
     this.setState({jobs: data})
   }
   render() {
-    console.log('logging jobs', this.state.jobs)
     return (
-      <div>
+      <div className="margins">
         {this.state.jobs.map(function(job) {
           return (
-            <div key={job.id}>
-              <h2>{job.title}</h2>
-              <h3>{job.company}</h3>
-              <h4>{job.dates}</h4>
-              {job.description.map(function(bullet) {
-                return <p>- {bullet}</p>
-              })}
+            <div key={job.id} className="white">
+              <h1 className="whiteColor">{job.title}</h1>
+              <div className="outline">
+                <h2>{job.company}</h2>
+                <h3>{job.dates}</h3>
+                {job.description.map(function(bullet) {
+                  return <p className="medium">- {bullet}</p>
+                })}
+              </div>
             </div>
           )
         })}

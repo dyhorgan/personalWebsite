@@ -5,13 +5,21 @@ import {Link} from 'react-router-dom'
 import {logout} from '../store'
 
 const Navbar = ({handleClick, isLoggedIn}) => (
-  <div>
-    <h1>Dylan Horgan</h1>
+  <div className="navColor">
+    <h1 className="headerStyle">Dylan Horgan</h1>
     <nav className="row space-around">
-      <Link to="/">About</Link>
-      <Link to="/experience">Experience</Link>
-      <Link to="/portfolio">Porfolio</Link>
-      <Link to="/contact">Contact</Link>
+      <Link to="/" className="navTextColor">
+        About
+      </Link>
+      <Link to="/experience" className="navTextColor">
+        Experience
+      </Link>
+      <Link to="/portfolio" className="navTextColor">
+        Porfolio
+      </Link>
+      <Link to="/contact" className="navTextColor">
+        Contact
+      </Link>
     </nav>
     <hr />
   </div>
