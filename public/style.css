@@ -122,3 +122,8 @@ form div {
 .large {
   font-size: 35px;
 }
+
+.space-between {
+  display: flex;
+  justify-content: space-between;
+}

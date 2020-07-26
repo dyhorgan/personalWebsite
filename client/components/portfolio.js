@@ -23,15 +23,22 @@ export class Portfolio extends React.Component {
           {projects.map(function(project) {
             return (
               <div key={project.id} className="pad">
-                <div className="row">
-                  <a href={project.gitUrl} className="large white bold outline">
-                    {project.title}
-                  </a>
+                <div className="row space-between">
+                  <div>
+                    <a
+                      href={project.gitUrl}
+                      className="large white bold outline"
+                    >
+                      {project.title}
+                    </a>
+                    <p className="medium white">{project.description}</p>
+                  </div>
                   <a href={project.gitUrl}>
                     <img src={project.imageUrl} className="picStyle" />
                   </a>
                 </div>
-                <p className="medium white">{project.description}</p>
+
+                <hr />
                 <div className="row">
                   {project.techStack.map(function(tech) {
                     customId += 1
@@ -42,6 +49,7 @@ export class Portfolio extends React.Component {
                     )
                   })}
                 </div>
+                <hr />
               </div>
             )
           })}
