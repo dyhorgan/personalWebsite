@@ -37,7 +37,7 @@ form div {
 }
 
 .picStyle {
-  max-width: 500px;
+  width: 50em;
 }
 
 .row {
@@ -72,6 +72,14 @@ form div {
   font-size: 80px;
 }
 
+.subHeaderStyle {
+  font-family: 'helsinki';
+  color: white;
+  position: relative;
+  left: 80px;
+  font-size: 65px;
+}
+
 .indentStyle {
   position: relative;
   left: 100px;
@@ -87,7 +95,8 @@ form div {
 }
 
 .portfolioMargin {
-  margin-right: 200px;
+  margin-right: 340px;
+  margin-left: 130px;
 }
 
 .margins {
@@ -111,6 +120,13 @@ form div {
 .pad {
   margin-bottom: 15em;
 }
+
+.smallPad {
+  margin-bottom: 2em;
+}
+.smallTopMargin {
+  margin-top: 1em;
+}
 .topMargin {
   margin-top: 7em;
 }
@@ -126,4 +142,11 @@ form div {
 .space-between {
   display: flex;
   justify-content: space-between;
+}
+.small {
+  font-size: 20px;
+}
+
+.profileImage {
+  width: 300px;
 }

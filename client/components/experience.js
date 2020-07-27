@@ -13,7 +13,7 @@ export class Experience extends React.Component {
   }
   render() {
     return (
-      <div className="margins">
+      <div className="margins topMargin pad">
         {this.state.jobs.map(function(job) {
           return (
             <div key={job.id} className="white">

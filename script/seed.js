@@ -7,6 +7,7 @@ let projects = [
   {
     title: 'StreamGuide',
     gitUrl: 'https://github.com/dyhorgan/StreamGuide',
+    herokuUrl: 'https://streamguide.herokuapp.com/allMovies',
     imageUrl: 'https://i.imgur.com/zbJtChx.png',
     description:
       'Tool for filtering through the libraries of streaming services.',
@@ -22,6 +23,7 @@ let projects = [
   {
     title: 'TERRA 2042',
     gitUrl: 'https://github.com/MADE-Game/TERRA2042',
+    herokuUrl: 'http://terra-2042.herokuapp.com/',
     imageUrl:
       'https://raw.githubusercontent.com/MADE-Game/TERRA2042/master/public/images/logo.png',
     description: 'Online card game',
@@ -38,6 +40,7 @@ let projects = [
   {
     title: 'GreenShopper',
     gitUrl: 'https://github.com/Green-Shopper/GreenShopper',
+    herokuUrl: 'https://green-shopper.herokuapp.com/',
     imageUrl: 'https://i.imgur.com/MO1jzAn.png',
     description: 'E-commerce site for selling potted plants.',
     techStack: [

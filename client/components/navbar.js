@@ -7,7 +7,7 @@ import {logout} from '../store'
 const Navbar = ({handleClick, isLoggedIn}) => (
   <div className="navColor">
     <h1 className="headerStyle">Dylan Horgan</h1>
-    <nav className="row space-around">
+    <nav className="row space-around small">
       <Link to="/" className="navTextColor">
         About
       </Link>

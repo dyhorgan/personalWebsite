@@ -17,8 +17,8 @@ export class Portfolio extends React.Component {
     let {projects} = this.state
     let customId = 0
     return (
-      <div className="indentStyle portfolioMargin">
-        <h1 className="whiteColor">Portfolio</h1>
+      <div className="indentStyle portfolioMargin topMargin">
+        <h1 className="whiteColor subHeaderStyle">Portfolio</h1>
         <div className="topMargin">
           {projects.map(function(project) {
             return (
@@ -32,8 +32,21 @@ export class Portfolio extends React.Component {
                       {project.title}
                     </a>
                     <p className="medium white">{project.description}</p>
+                    <div className="column">
+                      <a
+                        href={project.gitUrl}
+                        className="white medium smallPad smallTopMargin"
+                      >
+                        Github Link
+                      </a>
+
+                      <a href={project.herokuUrl} className="white medium">
+                        Heroku Link
+                      </a>
+                    </div>
                   </div>
-                  <a href={project.gitUrl}>
+
+                  <a href={project.herokuUrl}>
                     <img src={project.imageUrl} className="picStyle" />
                   </a>
                 </div>
@@ -44,7 +57,7 @@ export class Portfolio extends React.Component {
                     customId += 1
                     return (
                       <div key={customId}>
-                        <p className="white">{tech}</p>
+                        <p className="white small">{tech}</p>
                       </div>
                     )
                   })}

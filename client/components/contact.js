@@ -2,9 +2,9 @@ import React from 'react'
 
 export const Contact = () => {
   return (
-    <div className="indentStyle">
+    <div className="indentStyle topMargin">
       <div>
-        <h2 className="whiteColor">Contact Me</h2>
+        <h2 className="whiteColor subHeaderStyle">Contact Me</h2>
         <p className="medium white">
           I am currently open to job opportunities, as well as freelance and
           contract work.

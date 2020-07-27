@@ -10,6 +10,9 @@ const Project = db.define('project', {
     type: Sequelize.STRING,
     allowNull: false
   },
+  herokuUrl: {
+    type: Sequelize.STRING
+  },
   imageUrl: {
     type: Sequelize.STRING
   },
