@@ -7,8 +7,8 @@ import {Portfolio} from './components/portfolio'
 import {Experience} from './components/experience'
 import {Contact} from './components/contact'
 import {Welcome} from './components/welcome'
+import {Gate} from './components/gate'
 import {me} from './store'
-import {format} from 'url'
 
 /**
  * COMPONENT
@@ -29,6 +29,7 @@ class Routes extends Component {
         <Route path="/experience" component={Experience} />
         <Route path="/portfolio" component={Portfolio} />
         <Route path="/contact" component={Contact} />
+
         {isLoggedIn && (
           <Switch>
             {/* Routes placed here are only available after logging in */}

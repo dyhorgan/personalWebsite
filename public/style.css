@@ -63,7 +63,14 @@ form div {
   font-family: 'helsinki';
   src: url('./font/helsinki.ttf');
 }
-
+@font-face {
+  font-family: 'bebas-neue';
+  src: url('./font/BebasNeue-Regular.ttf');
+}
+.sophFontStyle {
+  font-family: 'bebas-neue';
+  color: white;
+}
 .headerStyle {
   font-family: 'helsinki';
   color: white;
@@ -149,4 +156,22 @@ form div {
 
 .profileImage {
   width: 300px;
+}
+
+.profileLinks {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.horizontalPad {
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 0.5em;
+  padding-bottom: 0px;
+}
+
+.randomIndent {
+  position: relative;
+  left: 0.35em;
 }
