@@ -8,27 +8,34 @@ class App extends React.Component {
   constructor() {
     super()
     this.state = {
-      urlString: 'blah'
+      gate: true
     }
+    this.changeFunc = this.changeFunc.bind(this)
   }
   componentDidMount() {
     let url = window.location.href
     console.log('logging url', url)
     let endUrl = url.slice(url.length - 5, url.length - 1)
-    this.setState({urlString: endUrl})
+    if (endUrl !== '080/' && endUrl !== '8080') {
+      this.setState({gate: true})
+    }
+  }
+  changeFunc() {
+    console.log('firing')
+    this.setState({gate: false})
   }
 
   render() {
-    let {urlString} = this.state
+    let {gate} = this.state
     return (
       <div>
-        {urlString !== '080/' && urlString !== '8080' ? (
+        {!gate ? (
           <div>
             <Navbar />
             <Routes />
           </div>
         ) : (
-          <Gate />
+          <Gate changeFunc={this.changeFunc} />
         )}
       </div>
     )

@@ -67,6 +67,20 @@ form div {
   font-family: 'bebas-neue';
   src: url('./font/BebasNeue-Regular.ttf');
 }
+
+@font-face {
+  font-family: 'southern-aire';
+  src: url('./font/SouthernAire_Personal_Use_Only.ttf');
+}
+@font-face {
+  font-family: 'lighthouse';
+  src: url('./font/Lighthouse_PersonalUse.ttf');
+}
+
+@font-face {
+  font-family: 'blacksword';
+  src: url('./font/Blacksword.ttf');
+}
 .sophFontStyle {
   font-family: 'bebas-neue';
   color: white;
@@ -77,6 +91,17 @@ form div {
   position: relative;
   left: 80px;
   font-size: 80px;
+}
+.scriptStyle {
+  font-family: 'southern-aire';
+  color: white;
+}
+
+.otherScriptStyle {
+  font-family: 'lighthouse';
+}
+.swordScriptStyle {
+  font-family: 'blacksword';
 }
 
 .subHeaderStyle {
@@ -143,7 +168,7 @@ form div {
 }
 
 .large {
-  font-size: 35px;
+  font-size: 40px;
 }
 
 .space-between {
@@ -174,4 +199,8 @@ form div {
 .randomIndent {
   position: relative;
   left: 0.35em;
+}
+
+.huge {
+  font-size: 14em;
 }
