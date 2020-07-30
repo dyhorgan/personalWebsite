@@ -20,13 +20,14 @@ class App extends React.Component {
       this.setState({gate: true})
     }
   }
-  changeFunc() {
-    console.log('firing')
+  changeFunc(event) {
+    event.preventDefault()
     this.setState({gate: false})
   }
 
   render() {
     let {gate} = this.state
+    console.log(gate)
     return (
       <div>
         {!gate ? (
