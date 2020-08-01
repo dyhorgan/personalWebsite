@@ -205,6 +205,20 @@ form div {
   font-size: 14em;
 }
 
+.very-large {
+  font-size: 4em;
+}
+
 .sliderStyle {
   width: 800px;
+}
+
+#background-video {
+  height: 40%;
+  width: 40%;
+  float: left;
+  top: 0;
+  padding: none;
+  position: fixed; /* optional depending on what you want to do in your app */
+  outline: 5px dotted green;
 }
