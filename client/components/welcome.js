@@ -20,13 +20,16 @@ export const Welcome = () => {
           Redux.
         </p>
       </div>
-      <a href="https://www.linkedin.com/in/dylan-horgan/" className="center">
+      <a
+        href="https://www.linkedin.com/in/dylan-horgan/"
+        className="center smallTopMargin"
+      >
         <img
-          className="profileImage"
+          className="profileImage smallTopMargin"
           src="https://media-exp1.licdn.com/dms/image/C4D03AQFvMD9TKVbZ0A/profile-displayphoto-shrink_400_400/0?e=1601510400&v=beta&t=fkH31HTZ6yn5wTI7_AFE78PWmdKK-Lwb7wA4VuURYUM"
         />
       </a>
-      <div className="profileLinks sophFontStyle large randomIndent">
+      <div className="profileLinks sophFontStyle large randomIndent smallTopMargin">
         <Link to="/portfolio" className="horizontalPad white">
           Portfolio
         </Link>

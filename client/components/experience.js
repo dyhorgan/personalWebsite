@@ -15,7 +15,7 @@ export class Experience extends React.Component {
     return (
       <div className="margins topMargin pad">
         <div className="whiteColor large center">Education</div>
-        <div className="white">
+        <div className="white tinyPad">
           <h1 className="whiteColor">Fullstack Academy</h1>
           <div className="outline">
             <h3>August 2019 – April 2020</h3>
@@ -27,6 +27,14 @@ export class Experience extends React.Component {
               -Selected as 1 of 30 new students out of 300+ applicants,
               completed 200+ hours of pair programming
             </p>
+            <p className="medium">
+              Proficient: JavaScript, React, Redux, Node.js, Express, Sequelize,
+              Webpack, CSS, HTML5, Git
+            </p>
+            <p className="medium">
+              Knowledgeable: PostgreSQL, Excel, MongoDb, Socket.io
+            </p>
+            <p className="medium">Some Experience: TDD (Mocha, Chai, Enzyme)</p>
           </div>
         </div>
 

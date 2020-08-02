@@ -153,9 +153,11 @@ form div {
   margin-bottom: 15em;
 }
 .littlePad {
-  margin-bottom: 10em;
+  margin-bottom: 7em;
 }
-
+.tinyPad {
+  margin-bottom: 4em;
+}
 .smallPad {
   margin-bottom: 2em;
 }
