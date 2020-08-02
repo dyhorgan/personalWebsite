@@ -15,12 +15,11 @@ export class Experience extends React.Component {
     return (
       <div className="margins topMargin pad">
         <div className="whiteColor large center">Education</div>
-        <div className="white pad">
-          <h1 className="whiteColor">FULLSTACK ACADEMY</h1>
+        <div className="white">
+          <h1 className="whiteColor">Fullstack Academy</h1>
           <div className="outline">
             <h3>August 2019 – April 2020</h3>
             <p className="medium">
-              {' '}
               -Immersive Full-Stack Engineering Program – ranked as top-6 coding
               bootcamp by Course Report
             </p>
@@ -30,6 +29,15 @@ export class Experience extends React.Component {
             </p>
           </div>
         </div>
+
+        <div className="white littlePad">
+          <h1 className="whiteColor">Hamilton College</h1>
+          <div className="outline">
+            <h3>August 2013 – June 2017</h3>
+            <p className="medium">-Bachelor of Arts in English Literature</p>
+          </div>
+        </div>
+
         <div className="whiteColor large center">Work</div>
         {this.state.jobs.map(function(job) {
           return (

@@ -77,6 +77,15 @@ let jobs = [
     dates: 'November 2018 – April 2019'
   },
   {
+    company: 'OmniFan',
+    title: 'Social Media Intern',
+    description: [
+      'Created content for a New York Knicks-centered web portal. (essays, commentary, and embedded graphics)',
+      'Posted content on Instagram account intended to boost site traffic'
+    ],
+    dates: 'June 2018 - December 2018'
+  },
+  {
     company: 'Foundry Literary + Media',
     title: 'Intern',
     description: [
