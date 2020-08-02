@@ -1,7 +1,7 @@
 'use strict'
 
 const db = require('../server/db')
-const {User, Project, Job} = require('../server/db/models')
+const {User, Project, Job, gateModel} = require('../server/db/models')
 
 let projects = [
   {
@@ -55,7 +55,9 @@ let projects = [
     ]
   }
 ]
-
+let gateBool = {
+  unlocked: false
+}
 let jobs = [
   {
     company: 'PuppySpot',
@@ -107,7 +109,7 @@ async function seed() {
     let job = jobs[i]
     await Job.create(job)
   }
-
+  await gateModel.create(gateBool)
   console.log(`seeded successfully`)
   // db.close()
 }

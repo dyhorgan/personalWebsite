@@ -1,6 +1,7 @@
 const User = require('./user')
 const Project = require('./project')
 const Job = require('./job')
+const gateModel = require('./gateModel')
 
 /**
  * If we had any associations to make, this would be a great place to put them!
@@ -18,5 +19,6 @@ const Job = require('./job')
 module.exports = {
   User,
   Project,
-  Job
+  Job,
+  gateModel
 }
