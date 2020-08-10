@@ -10,7 +10,7 @@ export const Contact = () => {
           contract work.
         </p>
         <p className="medium white">
-          Please feel free to reach out with any opportunities or inquiries.
+          Please feel free to reach out with any opportunities or inquiries!
         </p>
         <p className="medium white">Get in touch: dyhorgan@gmail.com</p>
       </div>
