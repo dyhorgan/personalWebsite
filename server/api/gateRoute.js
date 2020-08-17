@@ -22,3 +22,7 @@ router.put('/', async function(req, res, next) {
     next(err)
   }
 })
+
+router.post('/', async function(req, res, next) {
+  await console.log('postFiring')
+})

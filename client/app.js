@@ -32,14 +32,15 @@ class App extends React.Component {
   async unlockGate() {
     await axios.put('/api/gateRoute', {unlocked: true})
     this.setState({unlocked: true})
-    setTimeout(() => {
+    setTimeout(async () => {
       console.log('firing the setTimeout')
+      await axios.put('/api/gateRoute', {unlocked: false})
       this.setState({unlocked: false})
     }, 600000)
   }
   render() {
     let {gate, unlocked} = this.state
-    console.log('logging in render', unlocked)
+    console.log('logging in render', gate, unlocked)
     return (
       <div>
         {unlocked ? (

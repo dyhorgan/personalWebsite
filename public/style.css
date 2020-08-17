@@ -227,3 +227,8 @@ form div {
   position: fixed; /* optional depending on what you want to do in your app */
   outline: 5px dotted green;
 }
+
+.backgroundComp {
+  background-image: url('https://get.pxhere.com/photo/laptop-iphone-notebook-smartphone-macbook-mobile-blur-black-and-white-technology-white-pen-gadget-black-monochrome-design-computer-keyboard-personal-computer-personal-computer-hardware-918923.jpg');
+  /* background-color: #cccccc; */
+}

@@ -17,7 +17,7 @@ export class Portfolio extends React.Component {
     let {projects} = this.state
     let customId = 0
     return (
-      <div className="indentStyle portfolioMargin topMargin">
+      <div className="indentStyle portfolioMargin topMargin backgroundComp">
         <h1 className="whiteColor subHeaderStyle">Portfolio</h1>
         <div className="topMargin">
           {projects.map(function(project) {
