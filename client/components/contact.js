@@ -15,6 +15,7 @@ export const Contact = () => {
 
         <p className="medium white">Get in touch: dyhorgan@gmail.com</p>
       </div>
+      <div className="heightPad" />
     </div>
   )
 }

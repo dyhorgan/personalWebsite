@@ -42,6 +42,7 @@ export const Welcome = () => {
           Contact Me
         </Link>
       </div>
+      <div className="heightPad" />
     </div>
   )
 }

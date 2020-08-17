@@ -218,6 +218,10 @@ form div {
   width: 800px;
 }
 
+.heightPad {
+  height: 800px;
+}
+
 #background-video {
   height: 40%;
   width: 40%;
