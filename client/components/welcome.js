@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom'
 
 export const Welcome = () => {
   return (
-    <div className="margins topMargin backgroundComp">
+    <div className="margins topMargin">
       <h1 className="center whiteColor">
         Freelance Web Developer Based in New York.
       </h1>

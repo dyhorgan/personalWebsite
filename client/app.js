@@ -42,10 +42,11 @@ class App extends React.Component {
     let {gate, unlocked} = this.state
     console.log('logging in render', gate, unlocked)
     return (
-      <div>
+      <div className="backgroundComp">
         {unlocked ? (
           <div>
             <Navbar />
+
             <Routes />
           </div>
         ) : (

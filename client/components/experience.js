@@ -13,7 +13,7 @@ export class Experience extends React.Component {
   }
   render() {
     return (
-      <div className="margins topMargin pad backgroundComp">
+      <div className="margins topMargin pad">
         <div className="whiteColor large center">Education</div>
         <div className="white tinyPad">
           <h1 className="whiteColor">Fullstack Academy</h1>

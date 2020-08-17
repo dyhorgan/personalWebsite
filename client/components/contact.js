@@ -2,7 +2,7 @@ import React from 'react'
 
 export const Contact = () => {
   return (
-    <div className="indentStyle topMargin backgroundComp">
+    <div className="indentStyle topMargin">
       <div>
         <h2 className="whiteColor subHeaderStyle">Contact Me</h2>
         <p className="medium white">
