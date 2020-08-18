@@ -15,9 +15,11 @@ class App extends React.Component {
     this.unlockGate = this.unlockGate.bind(this)
   }
   async componentDidMount() {
+    await axios.post('/api/gateRoute', {unlocked: false})
     let {data} = await axios.get('/api/gateRoute')
-    console.log('logging in componentDidMount', data[0].unlocked)
-    this.setState({unlocked: data[0].unlocked})
+
+    let userGate = data[data.length - 1]
+    this.setState({unlocked: userGate.unlocked})
 
     let url = window.location.href
     let endUrl = url.slice(url.length - 5, url.length - 1)

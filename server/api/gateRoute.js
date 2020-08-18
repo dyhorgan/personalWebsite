@@ -16,7 +16,7 @@ router.put('/', async function(req, res, next) {
   try {
     console.log('hitting the right route')
     let gateArr = await gateModel.findAll()
-    let newThing = await gateArr[0].update(req.body)
+    let newThing = await gateArr[gateArr.length - 1].update(req.body)
     res.json(newThing)
   } catch (err) {
     next(err)
@@ -24,5 +24,6 @@ router.put('/', async function(req, res, next) {
 })
 
 router.post('/', async function(req, res, next) {
-  await console.log('postFiring')
+  let newGateEntry = await gateModel.create(req.body)
+  res.json(newGateEntry)
 })
