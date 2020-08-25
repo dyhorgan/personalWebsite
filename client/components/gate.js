@@ -8,7 +8,7 @@ export class Gate extends React.Component {
     const videoSource = 'https://imgur.com/a/6lmSnW3'
 
     return (
-      <div className="margins">
+      <div className="outline gateBackground">
         {/* <div className={classes.Container}>
         <video autoPlay="autoplay" loop="loop" muted className={classes.Video}>
           <source src={videoSource} type="video/mp4" />

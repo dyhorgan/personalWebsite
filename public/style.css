@@ -146,7 +146,7 @@ form div {
 }
 
 .medium {
-  font-size: 25px;
+  font-size: 29px;
 }
 
 .pad {
@@ -235,4 +235,30 @@ form div {
 .backgroundComp {
   background-image: url('https://get.pxhere.com/photo/laptop-iphone-notebook-smartphone-macbook-mobile-blur-black-and-white-technology-white-pen-gadget-black-monochrome-design-computer-keyboard-personal-computer-personal-computer-hardware-918923.jpg');
   /* background-color: #cccccc; */
+}
+
+.myDiv {
+  position: relative;
+  z-index: 1;
+  padding-top: 5%;
+  padding-right: 10%;
+  padding-bottom: 5%;
+  padding-left: 10%;
+}
+
+.myDiv::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxAQEA8PDw8PDw8PDw0PDw8NDw8PDw8NFREWFhUVFRUYHSggGBolGxUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKBQUFDgUFDisZExkrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrK//AABEIAMIBAwMBIgACEQEDEQH/xAAYAAEBAQEBAAAAAAAAAAAAAAAAAQIDB//EAB4QAQEBAQABBQEAAAAAAAAAAAABEQJBITFhgaES/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/APEQABAAFoJFiACoQFTWqyAAAqAKEQFgqAiooAi4AigAIAoAOnNjmug67ByARFQAAAgAAsBAAWFQBYipQFRQDEAXCiAoEAKKCUi4lBFABUwoKVAGsEAQpEoAEAAAIAAKCAAC6AkFoBqRaACAKACw1F0EFSgVFwBYVFAAsA0TQBAAAAWCAUFgIpUAWL8oAiwBFRQRdMQFAgCyoAQACi4gBQAFoCAAomgGGKoMKqAGKAmI2gMrI1AGRrAGUawwGY1YYYCC4YCC4fyCUkMAAARQwCKFAQWwEF1IBg1oAloABAAWAEoQ0AItBIAAEKAAAtRQQikAxmxpmghQAWVIQFjTMjQGIrNBFQADAFVFABMBQAEUAAABZQJEIARbUKACgCUArK2qDIqAQI1ICctFQCsrUAABcEAUFACAAAEFlQACAFVAWc+UxUAJQ0F1CkAKVkA0UCAQFikgB6FGaBUVKAqAAANIpAMAwAFwBFQANAFRQQCAC4aCIVAXUgApQAkXEawCopAKy1UwExKoCCgIpgCgABiwDCAAUAQWgJiiAsWIQCpIuAJWW8LAYVZFwGVwUAkDQEVAVnVZBqDLQIKuAyOmQBkAAFBFwICGLhQEUBAAFCAC1AAoBTUAKigAQASlQCFAEIrXE8gnM8Nysy+uxeYCigMiKAigAABQADAAVAICwEXEKAEAEWoAKkAFAZoVAKCgmN9eGY1z+AcxVoCCgOagCkACiANIACgAgALABKsABAAqwAQQBWqAMVmACpQBY7X2+1AYpVAAAf/Z')
+    center center;
+  opacity: 0.4;
+}
+
+.gateBackground {
+  background-color: rgb(56, 50, 50) !important;
 }

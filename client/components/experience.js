@@ -14,11 +14,11 @@ export class Experience extends React.Component {
   render() {
     return (
       <div className="margins topMargin">
-        <div className="whiteColor large center">Education</div>
-        <div className="white tinyPad">
+        <div className="whiteColor large center smallPad">Education</div>
+        <div className="white tinyPad myDiv">
           <h1 className="whiteColor">Fullstack Academy</h1>
-          <div className="outline">
-            <h3>August 2019 – April 2020</h3>
+          <div className="outline bold">
+            <h3 className="bold">August 2019 – April 2020</h3>
             <p className="medium">
               -Immersive Full-Stack Engineering Program – ranked as top-6 coding
               bootcamp by Course Report
@@ -38,29 +38,33 @@ export class Experience extends React.Component {
           </div>
         </div>
 
-        <div className="white littlePad">
+        <div className="white littlePad myDiv">
           <h1 className="whiteColor">Hamilton College</h1>
           <div className="outline">
-            <h3>August 2013 – June 2017</h3>
-            <p className="medium">-Bachelor of Arts in English Literature</p>
+            <h3 className="bold">August 2013 – June 2017</h3>
+            <p className="medium bold">
+              -Bachelor of Arts in English Literature
+            </p>
           </div>
         </div>
 
-        <div className="whiteColor large center">Work</div>
-        {this.state.jobs.map(function(job) {
-          return (
-            <div key={job.id} className="white">
-              <h1 className="whiteColor">{job.title}</h1>
-              <div className="outline">
-                <h2>{job.company}</h2>
-                <h3>{job.dates}</h3>
-                {job.description.map(function(bullet) {
-                  return <p className="medium">- {bullet}</p>
-                })}
+        <div className="whiteColor large center smallPad">Work</div>
+        <div className="myDiv">
+          {this.state.jobs.map(function(job) {
+            return (
+              <div key={job.id} className="white">
+                <h1 className="whiteColor">{job.title}</h1>
+                <div className="outline">
+                  <h2 className="bold">{job.company}</h2>
+                  <h2 className="bold">{job.dates}</h2>
+                  {job.description.map(function(bullet) {
+                    return <p className="medium outline bold">- {bullet}</p>
+                  })}
+                </div>
               </div>
-            </div>
-          )
-        })}
+            )
+          })}
+        </div>
         <div className="heightPad" />
       </div>
     )
