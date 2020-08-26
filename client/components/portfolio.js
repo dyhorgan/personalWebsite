@@ -31,16 +31,21 @@ export class Portfolio extends React.Component {
                     >
                       {project.title}
                     </a>
-                    <p className="medium white">{project.description}</p>
+                    <p className="medium white bold outline">
+                      {project.description}
+                    </p>
                     <div className="column">
                       <a
                         href={project.gitUrl}
-                        className="white medium smallPad smallTopMargin"
+                        className="white medium smallPad smallTopMargin outline bold"
                       >
                         Github Link
                       </a>
 
-                      <a href={project.herokuUrl} className="white medium">
+                      <a
+                        href={project.herokuUrl}
+                        className="white medium outline bold"
+                      >
                         Heroku Link
                       </a>
                     </div>

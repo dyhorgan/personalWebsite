@@ -141,12 +141,12 @@ form div {
 }
 
 .outline {
-  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-width: 1.1px;
   -webkit-text-stroke-color: black;
 }
 
 .medium {
-  font-size: 29px;
+  font-size: 30px;
 }
 
 .pad {

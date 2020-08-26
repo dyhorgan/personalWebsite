@@ -4,10 +4,10 @@ import {Link} from 'react-router-dom'
 export const Welcome = () => {
   return (
     <div className="margins topMargin">
-      <h1 className="center whiteColor">
+      <h1 className="center whiteColor outline">
         Freelance Web Developer Based in New York.
       </h1>
-      <div className="medium white">
+      <div className="medium white outline bold">
         <p>
           I have a passion for designing and developing seamless experiences and
           elegant interfaces. From web designs, to full-stack mobile
