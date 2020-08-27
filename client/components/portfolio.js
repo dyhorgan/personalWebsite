@@ -72,7 +72,7 @@ export class Portfolio extends React.Component {
             )
           })}
         </div>
-        <div className="heightPad" />
+        <div className="mediumHeightPad" />
       </div>
     )
   }

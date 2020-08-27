@@ -116,6 +116,10 @@ form div {
   position: relative;
   left: 100px;
 }
+.rightIndentStyle {
+  position: relative;
+  right: 300px;
+}
 
 .whiteBackground {
   background-color: white;
@@ -221,6 +225,13 @@ form div {
 .heightPad {
   height: 800px;
 }
+.smallHeightPad {
+  height: 7em;
+}
+
+.mediumHeightPad {
+  height: 20em;
+}
 
 #background-video {
   height: 40%;
@@ -240,10 +251,20 @@ form div {
 .myDiv {
   position: relative;
   z-index: 1;
+}
+
+.experienceMyDivPadding {
   padding-top: 5%;
   padding-right: 10%;
   padding-bottom: 5%;
   padding-left: 10%;
+}
+
+.welcomeMyDivPadding {
+  padding-top: 2%;
+  padding-right: 2.5%;
+  padding-bottom: 2%;
+  padding-left: 4%;
 }
 
 .myDiv::before {
@@ -261,4 +282,13 @@ form div {
 
 .gateBackground {
   background-color: rgb(56, 50, 50) !important;
+}
+
+.contactMargins {
+  margin-right: 30%;
+  margin-left: 30%;
+}
+
+.garamond {
+  font-family: 'garamond';
 }

@@ -2,18 +2,22 @@ import React from 'react'
 
 export const Contact = () => {
   return (
-    <div className="indentStyle topMargin bold">
+    <div className="contactMargins topMargin bold">
       <div>
-        <h2 className="whiteColor subHeaderStyle">Contact Me</h2>
-        <p className="medium white outline">
-          I am currently open to job opportunities, as well as freelance and
-          contract work.
-        </p>
-        <p className="medium white outline">
-          Please feel free to reach out with any opportunities or inquiries!
-        </p>
+        <h2 className="whiteColor center large">Contact Me</h2>
+        <div className="myDiv welcomeMyDivPadding">
+          <p className="medium white garamond">
+            I am currently open to job opportunities, as well as freelance and
+            contract work.
+          </p>
+          <p className="medium white garamond">
+            Please feel free to reach out with any opportunities or inquiries!
+          </p>
+        </div>
 
-        <p className="medium white outline">Get in touch: dyhorgan@gmail.com</p>
+        <p className="medium white center garamond">
+          Get in touch: dyhorgan@gmail.com
+        </p>
       </div>
       <div className="heightPad" />
     </div>

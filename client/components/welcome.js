@@ -7,7 +7,7 @@ export const Welcome = () => {
       <h1 className="center whiteColor outline">
         Freelance Web Developer Based in New York.
       </h1>
-      <div className="medium white outline bold">
+      <div className="medium white bold myDiv welcomeMyDivPadding garamond">
         <p>
           I have a passion for designing and developing seamless experiences and
           elegant interfaces. From web designs, to full-stack mobile
