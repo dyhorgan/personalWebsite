@@ -1,21 +1,15 @@
 import React, {useState} from 'react'
 import axios from 'axios'
-import {Player} from 'video-react'
-// import BackgroundVideo from './BackgroundVideo'
-// import classes from './BackgroundVideo.module.css'
+//  <video id="background-vido" loop muted autoPlay>
+//             <source src="http://www.sample-videos.com/video/mp4/720/big_buck_bunny_720p_1mb.mp4" type="video/mp4" />
+//             <source src="http://www.sample-videos.com/video/mp4/720/big_buck_bunny_720p_1mb.mp4" type="video/ogg" />
+
+//             Your browser does not support the video tag.
+//         </video>
 export class Gate extends React.Component {
   render() {
-    const videoSource = 'https://imgur.com/a/6lmSnW3'
-
     return (
       <div className="outline gateBackground">
-        {/* <div className={classes.Container}>
-        <video autoPlay="autoplay" loop="loop" muted className={classes.Video}>
-          <source src={videoSource} type="video/mp4" />
-          Your Browser does not support the video tag
-        </video>
-        
-        </div> */}
         <h1 className="center white huge swordScriptStyle">Dylan Horgan</h1>
         <h1 className="center white sophFontStyle very-large">
           Fullstack Software Engineer
