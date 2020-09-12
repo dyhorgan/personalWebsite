@@ -60,32 +60,13 @@ let gateBool = {
 }
 let jobs = [
   {
-    company: 'PuppySpot',
-    title: 'Sales Specialist',
-    description: [
-      'Functioned as sales rep for ~$800M start-up that helps place puppies with caring families across the United States',
-      'Achieved sales of $30,000 worth of pets per month, handling all aspects of the sales process from negotiating with breeders, marketing to customers, and processing sales transactions',
-      'Managed relationships with 300+ customers monthly and interacted with a national network of pre-vetted ethical breeders'
-    ],
-    dates: 'January 2019 – April 2019'
-  },
-  {
-    company: 'RYU',
-    title: 'Sales Connector',
-    description: [
-      'Worked with a team of 10 employees to launch Brooklyn extension of high-end North American retailer, Respect Your  Universe',
-      'Managed store inventory and deliveries, assisted customers throughout sales process, and operated various POS systems'
-    ],
-    dates: 'November 2018 – April 2019'
-  },
-  {
     company: 'OmniFan',
     title: 'Social Media Intern',
     description: [
       'Created content for a New York Knicks-centered web portal. (essays, commentary, and embedded graphics)',
       'Posted content on Instagram account intended to boost site traffic'
     ],
-    dates: 'June 2018 - December 2018'
+    dates: 'June 2018 - July 2019'
   },
   {
     company: 'Foundry Literary + Media',
