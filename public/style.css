@@ -181,7 +181,10 @@ form div {
 }
 
 .large {
-  font-size: 40px;
+  font-size: 4em;
+}
+.aboutSize {
+  font-size: 3em;
 }
 
 .space-between {
@@ -193,7 +196,7 @@ form div {
 }
 
 .profileImage {
-  width: 300px;
+  width: 17em;
 }
 
 .profileLinks {
@@ -219,7 +222,7 @@ form div {
 }
 
 .very-large {
-  font-size: 4em;
+  font-size: 5em;
 }
 
 .sliderStyle {
@@ -275,8 +278,15 @@ form div {
 }
 
 .gateBackground {
-  background-color: rgb(56, 50, 50) !important;
+  background: url('https://i.pinimg.com/originals/4f/6e/99/4f6e99820d8f232b20abbb8c9b5086ed.jpg') !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  height: 82em !important;
+  overflow: scroll !important;
 }
+/* .gateHeight {
+  
+} */
 
 .contactMargins {
   margin-right: 30%;

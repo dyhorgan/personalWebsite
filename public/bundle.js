@@ -736,7 +736,7 @@ function (_React$Component) {
         className: "center white sophFontStyle very-large"
       }, "Fullstack Software Engineer"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         href: "http://localhost:8080/",
-        className: "white center large sophFontStyle",
+        className: "white center large sophFontStyle outline bold",
         onClick: function onClick(event) {
           _this.props.changeFunc(event);
 
@@ -1187,7 +1187,7 @@ function (_React$Component) {
           className: "profileImage smallTopMargin",
           src: "https://media-exp1.licdn.com/dms/image/C4D03AQH-gt-JHYgShQ/profile-displayphoto-shrink_400_400/0?e=1605139200&v=beta&t=KOaHggnlQG5MEoHvxQRVrlvO9uuExEOK1DhpjiVyOBo"
         })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-          className: "profileLinks sophFontStyle large randomIndent smallTopMargin"
+          className: "profileLinks sophFontStyle aboutSize randomIndent smallTopMargin"
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
           to: "/portfolio",
           className: "horizontalPad white"
@@ -51867,7 +51867,7 @@ function warning(message) {
 /*!***************************************************************!*\
   !*** ./node_modules/react-router-dom/esm/react-router-dom.js ***!
   \***************************************************************/
-/*! exports provided: BrowserRouter, HashRouter, Link, NavLink, MemoryRouter, Prompt, Redirect, Route, Router, StaticRouter, Switch, generatePath, matchPath, withRouter, __RouterContext */
+/*! exports provided: MemoryRouter, Prompt, Redirect, Route, Router, StaticRouter, Switch, generatePath, matchPath, withRouter, __RouterContext, BrowserRouter, HashRouter, Link, NavLink */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";

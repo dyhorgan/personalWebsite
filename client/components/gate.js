@@ -16,7 +16,7 @@ export class Gate extends React.Component {
         </h1>
         <a
           href="http://localhost:8080/"
-          className="white center large sophFontStyle"
+          className="white center large sophFontStyle outline bold"
           onClick={event => {
             this.props.changeFunc(event)
             this.props.unlockGate()

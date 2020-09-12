@@ -52,7 +52,7 @@ export class Welcome extends React.Component {
                   src="https://media-exp1.licdn.com/dms/image/C4D03AQH-gt-JHYgShQ/profile-displayphoto-shrink_400_400/0?e=1605139200&v=beta&t=KOaHggnlQG5MEoHvxQRVrlvO9uuExEOK1DhpjiVyOBo"
                 />
               </a>
-              <div className="profileLinks sophFontStyle large randomIndent smallTopMargin">
+              <div className="profileLinks sophFontStyle aboutSize randomIndent smallTopMargin">
                 <Link to="/portfolio" className="horizontalPad white">
                   Portfolio
                 </Link>
