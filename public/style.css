@@ -40,6 +40,10 @@ form div {
   width: 50em;
 }
 
+.terraHeight {
+  height: 28em;
+}
+
 .row {
   display: flex;
   flex-direction: row;

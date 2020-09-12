@@ -78,7 +78,10 @@ export class Portfolio extends React.Component {
                         {project.herokuUrl ===
                         'http://terra-2042.herokuapp.com/' ? (
                           <a href="https://youtu.be/zAJ_c6nxjcs">
-                            <img src={project.imageUrl} className="picStyle" />
+                            <img
+                              src={project.imageUrl}
+                              className="picStyle terraHeight"
+                            />
                           </a>
                         ) : (
                           <a href={project.herokuUrl}>
