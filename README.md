@@ -4,9 +4,9 @@
 
 clone the repository
 install dependencies with "npm install"
-run with "npm run start dev"
+run with "npm run start-dev"
 
 ### Heroku
 
-Visit Heroku page with "Heroku Open"
+Visit Heroku page with "heroku open"
 
