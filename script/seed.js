@@ -64,7 +64,7 @@ let jobs = [
     title: 'Sales Specialist',
     description: [
       'Functioned as sales rep for ~$800M start-up that helps place puppies with caring families across the United States',
-      'Achieved sales of $40,000 worth of pets per month, handling all aspects of the sales process from negotiating with breeders, marketing to customers, and processing sales transactions',
+      'Achieved sales of $30,000 worth of pets per month, handling all aspects of the sales process from negotiating with breeders, marketing to customers, and processing sales transactions',
       'Managed relationships with 300+ customers monthly and interacted with a national network of pre-vetted ethical breeders'
     ],
     dates: 'January 2019 – April 2019'

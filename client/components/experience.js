@@ -67,7 +67,9 @@ export class Experience extends React.Component {
                 </div>
               </div>
 
-              <div className="whiteColor large center smallPad">Work</div>
+              <div className="whiteColor large center smallPad">
+                Professional Experience
+              </div>
               <div className="myDiv experienceMyDivPadding">
                 {this.state.jobs.map(function(job) {
                   return (
