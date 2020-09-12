@@ -61,7 +61,7 @@ let gateBool = {
 let jobs = [
   {
     company: 'OmniFan',
-    title: 'Social Media Intern',
+    title: 'Social Media Coordinator',
     description: [
       'Created content for a New York Knicks-centered web portal. (essays, commentary, and embedded graphics)',
       'Posted content on Instagram account intended to boost site traffic'
