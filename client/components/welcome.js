@@ -49,7 +49,7 @@ export class Welcome extends React.Component {
               >
                 <img
                   className="profileImage smallTopMargin"
-                  src="https://media-exp1.licdn.com/dms/image/C4D03AQH-gt-JHYgShQ/profile-displayphoto-shrink_400_400/0?e=1605139200&v=beta&t=KOaHggnlQG5MEoHvxQRVrlvO9uuExEOK1DhpjiVyOBo"
+                  src="https://i.ibb.co/M8gcBM3/1-E86-AB97-B9-FB-4-CBC-9-C45-E4138-B09-A62-B.jpg"
                 />
               </a>
               <div className="profileLinks sophFontStyle aboutSize randomIndent smallTopMargin">
