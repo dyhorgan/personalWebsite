@@ -45,7 +45,7 @@
     "@material-ui/core": "latest",
     "@material-ui/icons": "latest",
     "@types/react-transition-group": "^4.4.0",
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "compression": "^1.7.3",
     "connect-session-sequelize": "^6.0.0",
     "css-loader": "^4.1.1",
